@@ -1,0 +1,170 @@
+/*
+***
+Name: Rajvir Singh
+Date: January 26, 2022
+Section AB, TA- Tara Wueger & Dylan McKone
+
+This is the styles.css for my to-do list website. The primary colors
+that were used on this website were pastel pink, black/dark grey, and white.
+The pastel pink was used for the background of the website and list item.
+The black/dark grey was used for the text throughout the website. The white
+was used to separate the website into sections.
+*/
+
+body {
+  background-color: #FFDBDB;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  width: 60%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1, h2 {
+  color: #2c2c2c;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  width: 70%;
+  margin: auto;
+  padding: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFDBDB;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-top: 5px;
+}
+
+li span {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+}
+
+li .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.rm-btn, .completed-btn, .undo-btn, #rm-all-btn, #add-task button {
+  background-color: white;
+  cursor: pointer;
+}
+
+.rm-btn:hover, .completed-btn:hover, .undo-btn:hover, #rm-all-btn:hover, #add-task button:hover {
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.rm-btn {
+  border: 2px solid	#FF3131;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.rm-btn:hover {
+  background-color: #FF3131;
+}
+
+.completed-btn {
+  border: 2px solid	#32CD32;
+  padding: 8px;
+}
+
+.completed-btn:hover {
+  background-color: #32CD32;
+}
+
+.undo-btn {
+  border: 2px solid #1F51FF;
+  padding: 8px 16px;
+}
+
+.undo-btn:hover {
+  background-color: #1F51FF;
+}
+
+#rm-all-btn {
+  border: 2px solid black;
+  width: 60%;
+  padding: 10px;
+}
+
+#rm-all-btn:hover {
+  background-color: black;
+}
+
+#add-task {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8ff;
+  border-radius: 10px;
+}
+
+#add-task input {
+  width: 70%;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+#add-task input:focus {
+  outline: none;
+  border: 1px solid #575757;
+  transition-duration: 0.2s;
+}
+
+#add-task button {
+  padding: 8px;
+  border: 2px solid #ffc2c2;
+}
+
+#add-task button:hover {
+  background-color: #ffc2c2;
+}
+
+#todo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 70%;
+  background-color: #f8f8ff;
+  padding: 5px 20px;
+}
+
+#completed span {
+  text-decoration: line-through;
+}
+
+#rm-all {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}

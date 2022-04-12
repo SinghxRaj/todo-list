@@ -1,0 +1,66 @@
+<!--
+  ***
+Name: Rajvir Singh
+Date: January 26, 2022
+Section AB, TA- Tara Wueger & Dylan McKone
+
+  This is the index.html for my to-do list website. The
+  structure of the page is the following:
+  - (1) The title of the website (To Do List)
+  - (2) A section where you can input a new task to do
+  - (3) A section where you have a list of uncompleted tasks
+  - (4) A section where you have a list of completed tasks
+  ***
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To Do List</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans:wght@300&family=Raleway:wght@100;400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>To Do List</h1>
+    </header>
+    <main>
+      <section id="add-task" >
+        <input type="text" placeholder="Type task...">
+        <button id="add">Add Task</button>
+      </section>
+      <section id="todo">
+        <section id="uncompleted">
+          <h2>Uncompleted Tasks</h2>
+          <ul>
+            <li>
+              <span>Eat</span>
+              <div class="buttons">
+                <button class="rm-btn">Remove</button>
+                <button class="completed-btn">Completed</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="completed">
+          <h2>Completed Tasks</h2>
+          <ul>
+            <li>
+              <span>Wake up</span>
+              <button class="undo-btn">Undo</button>
+            </li>
+          </ul>
+        </section>
+        <section id="rm-all">
+          <button id="rm-all-btn">Clear All</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>&#169; 2022 Rajvir Singh. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
