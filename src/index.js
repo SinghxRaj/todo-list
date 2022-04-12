@@ -1,7 +1,5 @@
 /*
  * Name: Rajvir Singh
- * Date: January 26, 2022
- * Section AB, TA- Tara Wueger & Dylan McKone
  *
  * This is the JS to provide functionality for my to-do list website.
  * It provides functionality for the different buttons that are on
